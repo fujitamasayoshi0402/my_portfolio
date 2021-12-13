@@ -4,6 +4,10 @@ from django.contrib.gis.db import models
 
 
 class Border(models.Model):
+    class Meta:
+        verbose_name = '行政区域データ'
+        verbose_name_plural = '行政区域データ'
+
     n03_001 = models.CharField(max_length=50)
     n03_002 = models.CharField(max_length=50)
     n03_003 = models.CharField(max_length=50)
